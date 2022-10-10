@@ -33,15 +33,15 @@ aiohttpsession = aiohttp.ClientSession()
 
 arq = ARQ("https://thearq.tech", ARQ_API_KEY, aiohttpsession)
 
-SESSION = "AgCPaOQAtJ_WIxFkVXg4fkwpv9voD0aQGA93KRPyYSBqsRA3eHY6flalHOJU3lth3kvAfOj_i-kOx8fP56JhH8OYEX1POJeug7v8rqsAVfEmo0a_V_U7bXg8kYE_iqx3GBDcW_OQRM-2MKKEbePzwE-AA"
+SESSION = "AgDYfG4ACknlzU_9WUPs1phvRZURUQVBL5OH196gbFH1JyY0vah-d-w-9QPpJvr5KlErjNrS7IPsjg7-tDk4BNeaCA2czSqMypKshgNNvOgpysQifO5rL2gyfBT7Urk3UbjeP16pT0rikGKskVMif9M22LLfbaPxP0PFUb__TgmnUHRGEQi7ts0DvU0lskYER10JbnNAGroieo8zj5Hjc2LuUM82KG9qeYvAPfk2X1yN9SJQY5PIb8AHTsb5b4qp0tzYt1VfAbeaXpDilaMasoPYxoJ_1csLUOzrwEwh-ZzgphfnwxlDosiUBJ3VvpEUuvqZfBt7vKGx9IhGwNXOWidxdIh_igAAAAFMLUp_AA"
 
-API_ID = 9398500
+API_ID = 14187630
 
-API_HASH = "ad2977d673006bed6e5007d953301e13"
+API_HASH = "98bcd849f759dcf879e38d7e17948c31"
 
 app = Client(
 
-    "MyBot",
+    "AmoBotQuran",
 
     api_id=API_ID,
 
