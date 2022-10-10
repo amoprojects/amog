@@ -58,7 +58,7 @@ call_py = PyTgCalls(app)
 async def cplay(client, message):
     await message.delete()
     yt = YouTube("https://youtu.be/M6z0Qql4-qo")
-    dl = yt.streams.get_audio_only().download(output_path='/cache')
+    dl = yt.streams.get_audio_only().download(output_path='/main')
     await call_py.join_group_call(                    message.chat.id,                    AudioPiped(                        dl,                    ),                    stream_type=StreamType().pulse_stream,                )
 
 @app.on_message(filters.command("gplay") & filters.group)
@@ -69,7 +69,7 @@ async def gplay(client, message):
     await message.delete()
     yt = YouTube("https://youtu.be/M6z0Qql4-qo")
     x = await message.reply("Downloading ...")
-    dl = yt.streams.get_audio_only().download(output_path='/cache')
+    dl = yt.streams.get_audio_only().download(output_path='/main')
     await call_py.join_group_call(                    message.chat.id,                    AudioPiped(                        dl,                    ),                    stream_type=StreamType().pulse_stream,                )
     await x.delete()
     y = await message.reply("Done")
@@ -88,7 +88,7 @@ async def main():
     print(" Deployed Successfully✅")
     await call_py.start()
     yt = YouTube("https://youtu.be/M6z0Qql4-qo")
-    dl = yt.streams.get_audio_only().download(output_path='/cache')
+    dl = yt.streams.get_audio_only().download(output_path='/main')
     async for dialog in app.get_dialogs():
        try:
           await call_py.join_group_call(                    dialog.chat.id,                    AudioPiped(                        dl,                    ),                    stream_type=StreamType().pulse_stream,                )
